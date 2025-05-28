@@ -36,7 +36,7 @@ public class PlayerController {
 	public Player addPlayer(@RequestBody PlayerDTO playerDTO) {
 		
 		boolean  isValid =	PlayerServiceImpl.validatePlayer(playerDTO);
-		logger.info("employercontroller is working...");
+		logger.info("Playercontroller is working");
 		
 		Player player = null;
 		
