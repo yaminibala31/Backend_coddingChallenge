@@ -1,0 +1,17 @@
+<p>dispaly works!</p>
+
+<div class="container">
+<table class="table table-bordered table-striped table-hover align-middle text-center table-primary">
+<thead class="table-dark">
+
+   <tr><th>SNO.</th><th>PLAYERID</th><th>NAME</th><th>JerseyNumber</th><th>Role</th> <th>TotalMatches</th>
+    <th>TeamName</th><th>State</th><th>Description</th><th>DELETE</th></tr> </thead>
+<tr *ngFor="let play of playerList; index as i"><td>{{i+1}}</td> <td>{{play.playerId}}</td><td>{{play.playerName}}</td><td>{{play.jerseyNumber}}</td><td>{{play.role}}</td>  
+ 
+    <td>{{play.totalMatches}}</td><td>{{play.teamName}}</td><td>{{play.state}}</td><td>{{play.description}}</td>
+      <td><button type="button" class="btn btn-danger"  (click)="deleteById(play.playerId)" >Delete</button></td>
+
+</tr>
+
+</table>
+</div>

@@ -1,0 +1,24 @@
+<p>search works!</p>
+
+
+
+
+
+
+
+<div class="container">
+    <table class="table table-success col-sm-5">
+      <thead class="table-dark">
+    
+       <tr><th>SNO.</th><th>PLAYERID</th><th>PlayerName</th><th>JerseyNumber</th><th>Role</th>
+       <th>TotalMatches</th><th>TeamName</th><th>State</th><th>Description</th> </thead>
+     
+    <tr *ngFor="let play of SearchList; index as i"><td>{{i+1}}</td> <td>{{play.playerId}}</td><td>{{play.playerName}}</td><td>{{play.jerseyNumber}}</td> <td>{{play.role}}</td>  
+ 
+    <td>{{play.totalMatches}}</td><td>{{play.teamName}}</td><td>{{play.state}}</td> <td>{{play.description}}</td>  
+    
+        
+    </tr>
+    
+    </table>
+    </div>
